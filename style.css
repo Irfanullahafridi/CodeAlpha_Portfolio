@@ -55,3 +55,79 @@
         display: none;
     }
 }
+
+/* Home Section */
+
+.homeSection{
+    font-size:xx-large;
+    padding: 26px 26px;
+    /* margin: 10px 12px; */
+    height: 100vh;
+   
+    background-image: url("./creative-geometric-design-space_53876-89787.avif");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left bottom;
+
+    position: relative;
+    z-index: 2;
+}
+
+.homeSection h1{
+    font-weight: bolder;
+    color:rgb(247, 241, 241);
+    margin: 15px 12px;
+    transition: all .3s;
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    
+    animation-name: homeheading;
+    animation-duration: 4s;
+  
+    animation-timing-function: ease-in;
+  
+}
+@keyframes homeheading{
+
+    0%{
+        
+       
+        color: rgba(117, 10, 10, 0.363);
+    }
+    15%{
+        position: relative;
+       
+        color: rgba(61, 36, 36, 0.363);
+    }
+   
+    100%{
+      
+        color: rgb(5, 201, 70);
+    }
+}
+
+.homeSection h1 span{
+    color: rgb(0, 255, 34);
+    margin: 17px 0;
+}
+
+.homeSection button{
+    border: 1px solid rgb(0, 255, 13);
+    padding: 12px 28px;
+    margin: 27px 0;
+    color: white;
+    background-color: rgba(0,0,0,.3);
+    transition: all .3s;
+}
+.homeSection h1:hover{
+    transform: translateY(-2px);
+    text-shadow: 2px 2px 33px rgb(216, 13, 13);
+
+}
+.homeSection button:hover{
+    
+    border-radius: 6px;
+    background-color: rgba(141, 14, 14, 0.68);
+    box-shadow: 0 0 3px 3px rgba(14, 13, 13, 0.514);
+    
+}
